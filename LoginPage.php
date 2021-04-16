@@ -26,11 +26,39 @@
                     <input type="password" name="password" class="form-control" required>
                 </div>
                 <!-- END Password -->
+                <!-- Submit button -->
                 <button type="submit" class="btn btn-primary">Login</button>
+                <!-- END Submit button -->
             </form>
             <!-- END login form -->
         </div>
         <!-- END Login -->
+
+        <!-- Sign up -->
+        <div class="col-md-6">
+            <h2>Sign up here!</h2>
+            <!-- sign up form -->
+            <form action="addUser.php" method="POST">
+                <!-- User Name -->
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="user" class="form-control" required>
+                </div>
+                <!-- END User Name -->
+                <!-- Password -->
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <!-- END Password -->
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary">Sign up</button>
+                <!-- END Submit button -->
+            </form>
+            <!-- END sign up form -->
+        </div>
+        <!-- END sign up -->
+
         </div>
 </div>
 <!-- End Main -->
