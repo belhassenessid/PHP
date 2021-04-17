@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<!-- just Main -- need to add the nav, footer and template background -->
+<!-- just Main form - need nav, footer...  -->
 <div class="container">
     <div class="login-box">
         <div class="row">
