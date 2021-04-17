@@ -17,7 +17,7 @@ $res = mysqli_query($conn,$req);
 $num = mysqli_num_rows($res);
 
 if($num==1) {
-    echo"Username Already Exists";
+     echo"Username Already Exists";
 }else{
     $insert = "insert into usertable values('$name','$pass')";
     mysqli_query($conn,$insert);
