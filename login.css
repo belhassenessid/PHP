@@ -1,12 +1,11 @@
 body{
-    background-image: url("bg.png");
-    background-size:cover;
-    background-position: center;
+    background:  url(https://upload.wikimedia.org/wikipedia/commons/1/10/Waving_reeds_cinemagraph.gif) repeat center center fixed;
+    background-size: cover;
 }
 
+
 .login-box{
-    max-width: 700px;
-    float: none;
+    max-width: 800px;
     margin: 150px auto;
 }
 
@@ -16,6 +15,26 @@ body{
 }
 
 .login-right{
-    background: linear-gradient(rgba(255, 252, 252, 0),rgba(255, 252, 252,0.9));
+    background: linear-gradient(rgba(255, 252, 252, 0),rgba(255, 252, 252,0.5));
     padding: 30px;
 }
+
+.form-control{
+    background-color: transparent ;
+    border-color: black;
+    border-width: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
