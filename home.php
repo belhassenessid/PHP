@@ -5,7 +5,7 @@ if(!isset($_SESSION['username'])){
 }
 ?>
 
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr">       
     <head>
         <meta charset="utf-8">
         <title>User Sign in && Sign up</title>
