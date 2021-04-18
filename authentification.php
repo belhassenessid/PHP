@@ -2,8 +2,8 @@
 session_start();
 require_once ("config_db.php");
 
-    $name = $_POST['user'];
-    $pass = $_POST['password'];
+    $name =mysqli_real_escape_string($conn,$_POST['user']);
+    $pass =mysqli_real_escape_string($conn,$_POST['password']);
 
     $req = "select * from usertable where name='$name' and password='$pass'";
     $res = mysqli_query($conn,$req);
