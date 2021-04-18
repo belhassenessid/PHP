@@ -1,13 +1,7 @@
 <?php
 session_start();
+require_once ("config_db.php");
 
-$conn = mysqli_connect('localhost','root','','createuser');
-mysqli_set_charset($conn,"utf8");
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-else{
     $name = $_POST['user'];
     $pass = $_POST['password'];
 
@@ -25,5 +19,4 @@ else{
 
 
     mysqli_close($conn);
-}
 ?>
