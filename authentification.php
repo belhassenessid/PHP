@@ -12,7 +12,7 @@ require_once ("config_db.php");
 
     if($num==1) {
         $_SESSION['username']=$name;
-        header('location:home.php');
+        header('location:panier.php');
     }else{
         header('location:login.php');
     }

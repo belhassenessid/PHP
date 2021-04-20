@@ -17,23 +17,24 @@ COMMIT;
 
 
 ----------------------------------------------------------------
-table panier 
-
-
- Structure de la table `panier`
-
-
 CREATE TABLE `panier` (
-  `id` int(11) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `image` varchar(30) NOT NULL,
-  `price` int(11) NOT NULL,
-  `quantite` int(11) NOT NULL
+                          `id` int(11) NOT NULL,
+                          `name` varchar(30) NOT NULL,
+                          `image` varchar(30) NOT NULL,
+                          `price` int(11) NOT NULL,
+                          `quantite` int(11) NOT NULL,
+                          `username` varchar(255) CHARACTER SET armscii8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `panier`
+-- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `panier`
+--
+ALTER TABLE `panier`
+    ADD PRIMARY KEY (`id`);
 
 INSERT INTO `panier` (`id`, `name`, `image`, `price`, `quantite`) VALUES
 (1, 'product 1', 'img1.jpg', 10, 1),
