@@ -3,6 +3,9 @@ session_start();
 require("config_db.php");
 if(isset($_POST["add_to_cart"]))
 {
+    if(!isset($_SESSION['username'])){
+    header('location:login.php');
+}
     $id=$_POST['item_id'];
     //verification de produit ajouté
     $check = "select * from panier where id = $id";
