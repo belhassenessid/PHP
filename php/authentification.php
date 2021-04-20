@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once ("config_db.php");
+require_once("config_db.php");
 
     $name =mysqli_real_escape_string($conn,$_POST['user']);
     $pass =mysqli_real_escape_string($conn,$_POST['password']);

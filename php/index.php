@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="C:\Users\omara\OneDrive\Bureau\Web\\Css\all.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/all.min.css">
     <script type="text/javascript">
  function myFunction() {
 document.getElementById("myDropdown").classList.toggle("show");
@@ -63,7 +63,7 @@ if (openDropdown.classList.contains('show')) {
     <a  href="#" class="btn">Explore Now</a>
   </div>
   <div class="new-img">
-    <img src="img-2-testt.png" alt="" class="img-col">
+    <img src="../images/testHome3.png" alt="" class="img-col">
   </div>
 </div>
 <hr>
