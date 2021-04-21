@@ -1,39 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 15;
+}
+
+li, button{
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: #edf0f1;
+   text-decoration: none;
+}
+
+#na{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.title-a {
+  position: fixed;
+  margin-top: -25px;
+    margin-left: 70px;
+    color: #edf0f1;
+}
+
+.title{
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #edf0f1;
+  margin-right: auto;
+  cursor: pointer;
+}
+#logo{
+  margin-top: -2px;
+  margin-left: 49px;
+  color: #edf0f1;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+  background: #24252A;
+  border: 15px;
+  border-bottom-right-radius: : 30px;
+  width: 100%;
+  height: 20px;
+}
+.navbar-links{
+  margin-top: -6px;
+ list-style: none;
+}
+.navbar-links li{
+display: inline-block;
+padding: 0px 20px 0px 30px;
+
+}
+.navbar-links li a{
+transition: all 0.3s ease 0s;
+}
+.navbar-links li #na:hover{
+color:#0088A9;
+}
+.navbar-icons{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+.navbar-icons i{
+  padding: 0px;
+  margin-left: 45px;
+  margin-right: 25px;
+}
+.checkbtn{
+  position: fixed;
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
 body{
-    background:  url(https://upload.wikimedia.org/wikipedia/commons/1/10/Waving_reeds_cinemagraph.gif) repeat center center fixed;
-    background-size: cover;
+     font-family: "Montserrat", sans-serif;
+}
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
 }
 
-
-.login-box{
-    max-width: 800px;
-    margin: 150px auto;
+span {
+	font-size: 12px;
 }
 
-.login-left{
-    background: linear-gradient(rgba(120, 112, 112, 0.3),rgba(120, 112, 112,1));
-    padding: 30px;
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
 }
 
-.login-right{
-    background: linear-gradient(rgba(255, 252, 252, 0),rgba(255, 252, 252,0.5));
-    padding: 30px;
+button {
+	border-radius: 20px;
+	border: 1px solid #24252A;
+	background-color: #24252A;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 5ms ease-in;
+  transition: all 0.3s ease 0s;}
+button:hover{
+  color: #24252A;
+  border-color: #24252A;
+  background-color: #FFFFFF;
+}
+button:active {
+	transform: scale(0.95);
 }
 
-.form-control{
-    background-color: transparent ;
-    border-color: black;
-    border-width: 1px;
+button:focus {
+	outline: none;
 }
 
-h1{
-    color: white;
-    margin-top: 150px;
-    text-align: center;
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
 }
 
-a{
-    color: white;
-    margin-top: -120px;
-    margin-right: 30px;
-    background: rgba(45, 35, 35, 0.18);
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+	position: fixed;
+	overflow: hidden;
+      margin-top: 150px;
+  margin-left: 350px;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #24252A;
+	background: -webkit-linear-gradient(to right, #24252A, #24252A);
+	background: linear-gradient(to right, #24252A,#24252A);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
 }
