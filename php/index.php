@@ -28,8 +28,6 @@ if (openDropdown.classList.contains('show')) {
   <body>
 
     <header>
-    <!--  <input type="checkbox" id="check">-->
-      <!--  <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>-->
     <a href="#" class="logo"><i id="logo" class="fas fa-shopping-basket"></a></i>
     <p id="titre"><span class="title">Skouza</span> Store</p>
     <nav>
@@ -38,13 +36,13 @@ if (openDropdown.classList.contains('show')) {
         <i class="fas fa-bars"></i>
       </label>
             <ul class="navbar-links">
-    <li class="nav-item"><a id="na" href="#">Home</a></li>
+    <li class="nav-item"><a id="na" href="index.php">Home</a></li>
     <li class="nav-item"><a id="na" href="#">Shop</a></li>
     <li class="nav-item"><a id="na"  href="#">About</a></li>
     <li class="nav-item"><button onclick="myFunction()" class="dropbtn" type="button" name="button">My Account</button></li>
     <div id="myDropdown" class="dropdown-content">
-      <a href="#">Log in</a>
-      <a href="#">Sign Up</a>
+      <a href="login.php">Log in</a>
+      <a href="login.php">Sign Up</a>
     </div>
               </ul>
                  </nav>

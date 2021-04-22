@@ -18,7 +18,6 @@
 <li class="nav-item"><a id="na" href="index.php">Home</a></li>
 <li class="nav-item"><a id="na" href="#">Shop</a></li>
 <li class="nav-item"><a id="na"  href="#">About</a></li>
-
           </ul>
              </nav>
 <div class="navbar-icons">
