@@ -45,7 +45,7 @@ if(isset($_GET['delete'])){
       <td><?php echo $row["quantite"]?></td>
       <td><?php echo $row["price"]?></td>
       <td> <?php echo number_format($row["price"] * $row["quantite"],2) ;?> </td>
-      <td><a href="panier.php?delete=<?php echo $row["id"]; ?> class="btn btn-danger">delete</a></td>
+      <td><a href="panier.php?delete=<?php echo $row["id"]; ?>" class="btn btn-danger">delete</a></td>
     </tr>
   <?php
     $total += ($row["price"] * $row["quantite"]);
