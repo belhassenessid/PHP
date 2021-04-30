@@ -37,7 +37,7 @@ if (openDropdown.classList.contains('show')) {
       </label>
             <ul class="navbar-links">
     <li class="nav-item"><a id="na" href="index.php">Home</a></li>
-    <li class="nav-item"><a id="na" href="#">Shop</a></li>
+    <li class="nav-item"><a id="na" href="shop.php">Shop</a></li>
     <li class="nav-item"><a id="na"  href="#">About</a></li>
     <li class="nav-item"><button onclick="myFunction()" class="dropbtn" type="button" name="button">My Account</button></li>
     <div id="myDropdown" class="dropdown-content">

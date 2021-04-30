@@ -28,8 +28,6 @@ if(isset($_POST["add_to_cart"]))
      mysqli_close($conn);
    // header("location: Homme.php");
 }
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,6 +58,7 @@ if (openDropdown.classList.contains('show')) {
 </script>
 </head>
 <body>
+  <div>
 <header>
     <a href="#" class="logo"><i id="logo" class="fas fa-shopping-basket"></a></i>
     <p id="titre"><span class="title">Skouza</span> Store</p>
@@ -79,14 +78,14 @@ if (openDropdown.classList.contains('show')) {
   <a id="na" class="icon" href="#"><i class="fa fa-fw fa-search"></i></a>
   <a id="na" class="icon" href="#"><i class="fas fa-shopping-cart"></i></a>
   <a id="na" class="icon" href="#"><i class="fas fa-heart"></i></a>
-    </div>
+  </div>
 </header>
+</div>
 
 
 </br></br></br>
-<!-- affichage des produits -->
 <div class="small-container">
-    <h2 class="title">Produits homme</h2>
+    <h2 class="title1">Produits homme</h2>
 <div class="row">
   <?php 
   $req = "select * from product order by id asc";
@@ -110,7 +109,7 @@ if (openDropdown.classList.contains('show')) {
                         <br/><button type="submit" name="add_to_cart">Ajouter au panier<i class="fas fa-shopping-cart"></i></button>
                     </div>
             </form>
-            </div>
+         </div>
         
    <?php 
      }
@@ -118,7 +117,4 @@ if (openDropdown.classList.contains('show')) {
     ?>
      </div>   
 </div>
-    </div>
-</div>
 </body>
-</html>
