@@ -5,7 +5,6 @@
    if(!$query){
         echo 'error'.mysqli_error($conn); 
    }
-   if()
 ?>
 <html>
 <head>

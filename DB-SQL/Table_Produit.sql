@@ -14,5 +14,6 @@ CREATE TABLE `product` (
 INSERT INTO `product` (`id`, `name`, `image`, `price`) VALUES
 (1, 'product 1', '../images/prodHomme1.jpg', 10),
 (2, 'product 2', '../images/prodHomme2.jpg', 20),
-(3, 'Jean', '../images/prodHomme3.jpg', 35);
+(4, 'PRODUCT 3', '../images/bershka1.jpg', 80),
+(5, 'PRODUCT 4', '../images/bershka2.jpg', 76),
 COMMIT;
