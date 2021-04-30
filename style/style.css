@@ -596,14 +596,16 @@ border: 1px solid #333;
 
 
           }
-          #footer {
-              font-family: "Montserrat", sans-serif;
-              font-size: 15px;
-              width: 100%;
-              text-align: center;
-              weight: 250px;
-              background: #24252A;
-          }
+
       }
   }
-  
+
+#footer {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    background: #24252A;
+    color: #DDDDDD;
+}

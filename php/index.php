@@ -58,7 +58,7 @@ if (openDropdown.classList.contains('show')) {
   <div class="news">
     <h1>Collection<br>New Arrivals</h1>
     <p id="collection" class="collection">New Collection are in check out!</p>
-    <a  href="#" class="btn">Explore Now</a>
+    <a  href="shop.php" class="btn">Explore Now</a>
   </div>
   <div class="new-img">
     <img src="../images/testHome3.png" alt="" class="img-col">
@@ -137,6 +137,7 @@ if (openDropdown.classList.contains('show')) {
   </div>
 </div>
 <footer>
+
   <div id="footer" class="footer-message">
       <p>Copyright &copy;2021 | All Rights Reserved.Designed by</p>
   </div>
