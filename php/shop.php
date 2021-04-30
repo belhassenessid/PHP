@@ -54,7 +54,7 @@
                         <span class="label"><?= $row['name']; ?></span>
                     </figcaption>
                 </figure>
-                <button data-product="climate" name="add_to_cart">check product</button>
+                <button data-product="climate" name="add_to_cart">view product</button>
                 <a href="Homme.php"></a>
             </article>
             <?php } }?>     
