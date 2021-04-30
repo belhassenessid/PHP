@@ -66,7 +66,7 @@ if (openDropdown.classList.contains('show')) {
     <nav>
             <ul class="navbar-links">
     <li class="nav-item"><a id="na" href="index.php">Home</a></li>
-    <li class="nav-item"><a id="na" href="#">Shop</a></li>
+    <li class="nav-item"><a id="na" href="shop.php">Shop</a></li>
     <li class="nav-item"><a id="na"  href="#">About</a></li>
     <li class="nav-item"><button onclick="myFunction()" class="dropbtn" type="button" name="button">My Account</button></li>
     <div id="myDropdown" class="dropdown-content">
@@ -77,7 +77,7 @@ if (openDropdown.classList.contains('show')) {
                  </nav>
   <div class="navbar-icons">
   <a id="na" class="icon" href="#"><i class="fa fa-fw fa-search"></i></a>
-  <a id="na" class="icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+  <a id="na" class="icon" href="panier.php"><i class="fas fa-shopping-cart"></i></a>
   <a id="na" class="icon" href="#"><i class="fas fa-heart"></i></a>
     </div>
 </header>
@@ -107,7 +107,7 @@ if (openDropdown.classList.contains('show')) {
                         <input type="hidden" name="item_name" value="<?php echo $row["name"];?>"/>
                         <input type="hidden" name="item_price" value="<?php echo $row["price"];?>"/>
                         <input type="hidden" name="item_image" value="<?php echo $row["image"];?>"/>
-                        <br/><button type="submit" name="add_to_cart">Ajouter au panier<i class="fas fa-shopping-cart"></i></button>
+                        <br/><button type="submit" name="add_to_cart"  value="Add to cart"><i class="fas fa-shopping-cart"></i></button>
                     </div>
             </form>
             </div>

@@ -23,6 +23,7 @@ body{
    overflow: hidden;
    margin-bottom: 3rem;
    max-height:300px;
+   z-index: 2;
 }
  
  

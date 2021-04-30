@@ -3,9 +3,10 @@
 *{
 box-sizing: border-box;
 margin: 0;
-padding: 0;
-}
+padding: 15;
+/*background-color: #141313;*/
 
+}
 li, button{
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
@@ -24,12 +25,13 @@ li, button{
   text-decoration: none;
 }
 
-#titre{
+.title-a {
   position: fixed;
   margin-top: -11px;
   padding: 0px 10px 2px 15px;
     margin-left: 70px;
     color: #edf0f1;
+    text-decoration: none;
 }
 .logo i{
   margin-top: -12px;
@@ -45,17 +47,16 @@ li, button{
   color: #edf0f1;
   margin-right: auto;
   cursor: pointer;
-
 }
 
 header{
+  z-index: 2;
   position: fixed;
   display: flex;
   justify-content: space-between;
   padding: 30px 10px;
   background: #24252A;
   border: 15px;
-  border-bottom-right-radius: 30px;
   width: 100%;
   height: 20px;
 }
@@ -77,19 +78,7 @@ transition: all 0.3s ease 0s;
 .navbar-links li #na:hover{
 color:#0088A9;
 }
-/*button{
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  outline: none;
-}
-button:hover{
-    background-color: rgba(0, 136, 169, 0.7);
-    outline: none;
-}*/
+
 .dropbtn {
   padding: 4px 0px;
   background-color: rgba(0, 136, 169, 1);
@@ -200,10 +189,7 @@ line-height: 60px;
 margin:25px 0;
 color: #edf0f1;
 }
-/*.btn p{
-  font-family: "Montserrat", sans-serif;
-font-style: none;
-text-decoration: none;}*/
+
 .btn{
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
@@ -212,7 +198,7 @@ text-decoration: none;}*/
   color: #fff;
   padding: 8px 30px;
   margin-top: 12px;
-  margin-left: 30px;
+  margin-left: 30px 0;
   border-radius: 30px;
     outline: none;
     transition: background 0.5s;
@@ -221,6 +207,7 @@ text-decoration: none;}*/
       background: #563434;
       outline: none;
 }
+
 hr {
   margin-top: 120px;
   margin-left: 480px;
@@ -238,6 +225,7 @@ h3{
   text-decoration: none;
 }
 .cards-container{
+
   width: 998px;
   display: block;
   margin-top: 80px;
@@ -356,6 +344,7 @@ border: 1px solid #333;
 
   .contact-in:nth-child(1) {
   	flex: 30%;
+  	background: url(../images/1.jpg);
   	color: #fff;
   }
 
@@ -499,113 +488,117 @@ border: 1px solid #333;
   }
 
   @media only screen and (max-width:1250px) {
-      .contact-in:nth-child(1) {
-          flex: 50%;
-      }
+  	.contact-in:nth-child(1) {
+  		flex: 50%;
+  	}
 
-      .contact-in:nth-child(2) {
-          flex: 50%;
-      }
+  	.contact-in:nth-child(2) {
+  		flex: 50%;
+  	}
 
-      .contact-in:nth-child(3) {
-          flex: 100%;
-      }
+  	.contact-in:nth-child(3) {
+  		flex: 100%;
+  	}
+    .cards-container{
+      flex: 50%;
+      display: block;
+      padding-bottom: 30px;
 
-      .cards-container {
-          display: block;
-          width: 100%;
-          padding-bottom: 30px;
-
-      }
-
-      hr {
-          width: 300px;
-          margin-left: 250px;
-
-      }
-
-      @media (max-width: 500px) {
-          #na {
-              padding: 1px;
-          }
-      }
-      @media (max-width: 980px) {
-          .checkbtn {
-              align-items: center;
-              margin-top: -30px;
-              margin-left: 70px;
-              display: block;
-              float: left;
-              position: fixed;
-          }
-
-          #titre {
-              margin-left: 0px;
-          }
-
-          .logo i {
-              display: none;
-          }
-
-          nav ul li a {
-              font-size: 16px;
-          }
-
-          ul {
-              position: fixed;
-              width: 100%;
-              height: 100vh;
-              background: #24252A;
-              top: 80px;
-              left: -100%;
-              text-align: center;
-              transition: all .5s;
-          }
-
-          nav ul li {
-              display: block;
-              margin: 50px 0;
-              line-height: 30px;
-          }
-
-          nav ul li a {
-              font-size: 20px;
-          }
-
-          a:hover, a.active {
-              background: none;
-              color: #24252A;
-          }
-
-          #check:checked ~ ul {
-              left: 0;
-          }
-
-          @media only screen and (max-width: 360px) {
-              .contact-in:nth-child(1) {
-                  flex: 50%;
-              }
-
-              .contact-in:nth-child(2) {
-                  flex: 50%;
-              }
-
-              .contact-in:nth-child(3) {
-                  flex: 100%;
-              }
-
-
-          }
-
-      }
+  }
+  .cards-container .card{
+    width: 15px;
+  }
   }
 
-#footer {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    width: 100%;
-    text-align: center;
-    height: 20px;
-    background: #24252A;
-    color: #DDDDDD;
+  hr{
+    width: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+
+  }
+  @media (max-width: 500px){
+    .navbar-icons{
+      padding: 0px;
+      margin-right: 50px;
+    }
+    .checkbtn{
+      margin-top: -30px;
+      margin-left: 320px;
+      display: block;
+    }
+  }
+  @media (max-width: 980px){
+    .navbar-icons{
+      padding: 0px;
+      margin-right: 50px;
+    }
+    .checkbtn{
+      margin-top: -30px;
+      margin-left: 320px;
+      display: block;
+    }
+    #titre{
+      margin-left: 0px;
+    }
+    .logo i{
+      display: none;
+    }
+
+    nav ul li a{
+      font-size: 16px;
+    }
+
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #24252A;
+      top: 80px;
+      right: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 25px 0;
+      line-height: 10px;
+
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #24252A;
+    }
+    #check:checked ~ ul{
+      right: 0;
+      display: block;
+    }
+    }
+
+  @media only screen and (max-width:360px) {
+  	.contact-in:nth-child(1) {
+  		flex: 50%;
+  	}
+
+  	.contact-in:nth-child(2) {
+  		flex: 50%;
+  	}
+
+  	.contact-in:nth-child(3) {
+  		flex: 100%;
+  	}
+
+
+
 }
+#footer{
+  font-family: "Montserrat", sans-serif;
+    	font-size: 15px;
+  width: 100%;
+  text-align: center;
+  background: #24252A;
+  color: white;
+}
+
