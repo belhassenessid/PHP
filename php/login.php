@@ -33,7 +33,7 @@
   </header>
   <div class="container" id="container">
   <div class="form-container sign-up-container">
-  <form action="authentification.php" method="POST">
+  <form action="addUser.php" method="POST">
   	<h1>Create Account</h1>
   	<div class="social-container">
   		<a href="#" class="social"><i class="fab fa-facebook"></i></a>
@@ -47,7 +47,7 @@
   </form>
   </div>
   <div class="form-container sign-in-container">
-  	<form action="addUser.php" method="POST">
+  	<form action="authentification.php" method="POST">
   		<h1>Sign In</h1>
   		<div class="social-container">
   		<a href="#" class="social"><i class="fab fa-facebook"></i></a>

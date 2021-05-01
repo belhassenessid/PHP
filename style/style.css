@@ -151,6 +151,45 @@ font-weight: bold;
 #check{
   display: none;
 }
+.search-box{
+  background: #24252A;
+  position: absolute;
+  top: 61.5px;
+  right: 10%;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #edf0f1;
+  display: none;
+}
+.search-box:before{
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #edf0f1;
+}
+.search-box input[type="text"]{
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 2px solid #141313;
+  outline: none;
+}
+.search-box input[type="button"]{
+  width: 80px;
+  padding: 5px 0;
+  background: #141313;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #edf0f1;
+  outline: none;
+  cursor: pointer;
+}
 
 .Container{
   display: flex;
@@ -486,6 +525,20 @@ border: 1px solid #333;
   	width: 100%;
   	height: 100%;
   }
+@media screen and (max-width:1150px){
+
+  .search-box{
+    width: 270px;
+    right: -15%;
+  }
+  .search-box input[type="text"]{
+    width: 140px;
+    margin-left: 15px;
+  }
+  .search-box input[type="button"] {
+    margin-right: 12px;
+  }
+  }
 
   @media only screen and (max-width:1250px) {
   	.contact-in:nth-child(1) {
@@ -517,6 +570,17 @@ border: 1px solid #333;
 
   }
   @media (max-width: 500px){
+    .search-box{
+      width: 270px;
+      right: -55%;
+    }
+    .search-box input[type="text"]{
+      width: 140px;
+      margin-left: 15px;
+    }
+    .search-box input[type="button"] {
+      margin-right: 12px;
+    }
     .navbar-icons{
       padding: 0px;
       margin-right: 50px;
@@ -598,7 +662,8 @@ border: 1px solid #333;
     	font-size: 15px;
   width: 100%;
   text-align: center;
+  weight: 250px;
   background: #24252A;
   color: white;
 }
-
+}

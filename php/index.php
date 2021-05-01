@@ -3,8 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <link rel="stylesheet" type="text/css" href="../style/all.min.css">
+    <link href="../style/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+   <!-- <link rel="stylesheet" href="../style/style.css">-->
+    <link rel="stylesheet" href="../style/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+    		    $(".fa-search").click(function() {
+    		       $(".search-box").toggle();
+    		       $("input[type='text']").focus();
+    		     });
+
+     		});
+    </script>
     <script type="text/javascript">
  function myFunction() {
 document.getElementById("myDropdown").classList.toggle("show");
@@ -26,17 +38,17 @@ if (openDropdown.classList.contains('show')) {
     <title></title>
   </head>
   <body>
-
     <header>
-    <a href="#" class="logo"><i id="logo" class="fas fa-shopping-basket"></a></i>
-    <p id="titre"><span class="title">Skouza</span> Store</p>
+    <a href="index.php" class="logo"><i id="logo" class="fas fa-shopping-basket"></i></a>
+    <a href="index.php" class="title-a"><p id="titre"><span class="title">Skouza</span> Store</p></a>
+
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
             <ul class="navbar-links">
-    <li class="nav-item"><a id="na" href="index.php">Home</a></li>
+    <li class="nav-item"><a id="na" href="index.html">Home</a></li>
     <li class="nav-item"><a id="na" href="shop.php">Shop</a></li>
     <li class="nav-item"><a id="na"  href="#">About</a></li>
     <li class="nav-item"><button onclick="myFunction()" class="dropbtn" type="button" name="button">My Account</button></li>
@@ -48,12 +60,15 @@ if (openDropdown.classList.contains('show')) {
                  </nav>
   <div class="navbar-icons">
   <a id="na" class="icon" href="#"><i class="fa fa-fw fa-search"></i></a>
-  <a id="na" class="icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+  <div class="search-box">
+     <input type="text" placeholder=""/>
+     <input type="button" value="Search"/>
+     </div>
+  <a id="na" class="icon" href="panier.php"><i class="fas fa-shopping-cart"></i></a>
   <a id="na" class="icon" href="#"><i class="fas fa-heart"></i></a>
     </div>
 </header>
 <div class="mid">
-
 <div class="Container">
   <div class="news">
     <h1>Collection<br>New Arrivals</h1>
@@ -61,7 +76,7 @@ if (openDropdown.classList.contains('show')) {
     <a  href="shop.php" class="btn">Explore Now</a>
   </div>
   <div class="new-img">
-    <img src="../images/testHome3.png" alt="" class="img-col">
+    <img src="image\img-2-testt.png" alt="" class="img-col">
   </div>
 </div>
 <hr>
@@ -76,7 +91,7 @@ if (openDropdown.classList.contains('show')) {
     </div>
     <div class="face face2">
       <p>View all Women's Collection</p>
-      <a id="cards" href="#">View all</a>
+      <a id="cards" href="Femme.php">View all</a>
     </div>
   </div>
   <div class="card">
@@ -88,7 +103,7 @@ if (openDropdown.classList.contains('show')) {
     </div>
     <div class="face face2">
       <p >View all Men's Collection</p>
-      <a id="cards" href="#">View all</a>
+      <a id="cards" href="Homme.php">View all</a>
     </div>
   </div>
   <div class="card">
@@ -100,7 +115,7 @@ if (openDropdown.classList.contains('show')) {
     </div>
     <div class="face face2">
       <p >View all kid's Collection</p>
-      <a id="cards" href="#">View all</a>
+      <a id="cards" href="enfant.php">View all</a>
     </div>
   </div>
 </div>
@@ -137,13 +152,10 @@ if (openDropdown.classList.contains('show')) {
   </div>
 </div>
 <footer>
-
   <div id="footer" class="footer-message">
       <p>Copyright &copy;2021 | All Rights Reserved.Designed by</p>
   </div>
 </footer>
-
 </div>
-
   </body>
 </html>

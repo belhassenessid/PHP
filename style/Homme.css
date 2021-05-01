@@ -145,12 +145,6 @@ font-weight: bold;
   padding: 0px 12px 5px 15px;
   margin-right: 15px;
 }
-.container{
-  max-width:1300px;
-  margin:auto;
-  padding-left:25px;
-  padding-right:25px;
-}
 .row{
   display: flex;
   align-items: center;
@@ -189,5 +183,13 @@ font-weight: bold;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-
+}
+#footer{
+  font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+  width: 100%;
+  text-align: center;
+  background: #24252A;
+  color: white;
+  margin-bottom: 0%;
 }
