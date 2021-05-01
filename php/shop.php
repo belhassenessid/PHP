@@ -1,9 +1,9 @@
-<?php 
+<?php
    require_once('config_db.php');
-   $sql = "select * from product"; 
+   $sql = "select * from product";
    $query = mysqli_query($conn,$sql);
    if(!$query){
-        echo 'error'.mysqli_error($conn); 
+        echo 'error'.mysqli_error($conn);
    }
 ?>
 <html>
@@ -17,6 +17,35 @@
     <link href="../style/shop.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="../style/all.min.css">
     <link rel="stylesheet" href="../style/shop.css?v=<?php echo time(); ?>">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+    		    $(".fa-search").click(function() {
+    		       $(".search-box").toggle();
+    		       $("input[type='text']").focus();
+    		     });
+
+     		});
+    </script>
+    <script type="text/javascript">
+ function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+  openDropdown.classList.remove('show');
+}
+}
+}
+}
+</script>
 </head>
 <body>
 
@@ -41,12 +70,16 @@
                  </nav>
   <div class="navbar-icons">
   <a id="na" class="icon" href="#"><i class="fa fa-fw fa-search"></i></a>
+  <div class="search-box">
+     <input type="text" placeholder=""/>
+     <input type="button" value="Search"/>
+     </div>
   <a id="na" class="icon" href="panier.php"><i class="fas fa-shopping-cart"></i></a>
   <a id="na" class="icon" href="#"><i class="fas fa-heart"></i></a>
     </div>
 </header>
 <div class="products-container">
-           <?php if(mysqli_num_rows($query)>0){ 
+           <?php if(mysqli_num_rows($query)>0){
             while($row = mysqli_fetch_assoc($query)){?>
             <article class="product">
                 <figure>
@@ -58,7 +91,7 @@
                 <button data-product="climate" name="add_to_cart">view product</button>
                 <a href="Homme.php"></a>
             </article>
-            <?php } }?>     
-</div> 
+            <?php } }?>
+</div>
 </body>
 </html>

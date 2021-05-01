@@ -314,7 +314,7 @@ font-family: "Montserrat", sans-serif;
 }
 .cards-container .card .face.face2{
   position: relative;
-  background: #fff;
+  background: #434040;
   display: flex;
   justify-content: center;
   padding: 50px;
@@ -333,12 +333,12 @@ font-family: "Montserrat", sans-serif;
    color: #edf0f1;
 }
 #cards{
-margin: 12px 0 0;
-margin-left: 50px;
-display: inline-block;
+margin-top: 40px;
+margin-left: -60px;
+display: block;
 text-decoration: none;
 font-weight: 950;
-color: #333;
+color: #edf0f1;
 text-align: center;
 justify-content: center;
 padding: 1px;
