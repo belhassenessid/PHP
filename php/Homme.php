@@ -24,7 +24,8 @@ if(isset($_POST["add_to_cart"]))
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($conn);
         }
-    } else {echo '<script>alert("item already added ")</script>';
+    } else {
+        header("location:Homme.php");
     }
      mysqli_close($conn);
    // header("location: Homme.php");
