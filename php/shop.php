@@ -13,6 +13,7 @@
     <title></title>
     <meta name="description" content="E-commerce website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <link href="../style/shop.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="../style/all.min.css">

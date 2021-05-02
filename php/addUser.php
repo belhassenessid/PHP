@@ -16,6 +16,7 @@ if($num==1) {
     $insert = "insert into usertable values('$name','$pass')";
     mysqli_query($conn,$insert);
     echo"Registration Successful";
+    header("location: index.php");
 }
 
 
