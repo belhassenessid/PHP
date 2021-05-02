@@ -150,7 +150,9 @@ font-weight: bold;
           font-size: 15px;
     width: 100%;
     text-align: center;
-    weight: 250px;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
     background: #24252A;
     color: white;
   }

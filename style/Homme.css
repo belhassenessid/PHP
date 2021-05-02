@@ -186,9 +186,12 @@ font-weight: bold;
 }
 #footer{
   font-family: "Montserrat", sans-serif;
-      font-size: 15px;
+  font-size: 15px;
   width: 100%;
   text-align: center;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
   background: #24252A;
   color: white;
   margin-bottom: 0%;
