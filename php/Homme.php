@@ -1,6 +1,7 @@
 <?php
 session_start();
 require("config_db.php");
+
 if(isset($_POST["add_to_cart"]))
 {
     if(!isset($_SESSION['username'])){
@@ -89,14 +90,14 @@ if (openDropdown.classList.contains('show')) {
 <div class="small-container">
     <h2 class="title1">Men Products</h2>
 <div class="row">
-  <?php 
+  <?php
   $req = "select * from product where gender='h' order by id asc";
   $res= mysqli_query($conn,$req);
   if(mysqli_num_rows($res)>0){
-      while($row=mysqli_fetch_assoc($res)){ 
+      while($row=mysqli_fetch_assoc($res)){
   ?>
-  
-  
+
+
         <div class="col-4">
             <form method="POST" action="Homme.php">
                     <div>
@@ -112,12 +113,12 @@ if (openDropdown.classList.contains('show')) {
                     </div>
             </form>
             </div>
-        
-   <?php 
+
+   <?php
      }
       }
     ?>
-     </div>   
+     </div>
 </div>
     </div>
 </div>

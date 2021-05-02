@@ -1,13 +1,20 @@
 <?php
 session_start();
 require_once("config_db.php");
-//php delete button 
+//php delete button
 if(isset($_GET['delete'])){
     $id = $_GET['delete'];
     $rem = "delete from panier where id =$id";
     mysqli_query($conn,$rem);
+    $result = $conn->query("SELECT COUNT(*) FROM `panier`");
+    $row = $result->fetch_row();
+    $x = $row[0];
+    if($x == 0)
+    {
+      header("location:shop.php");
+    }
     //to return to the current web page
-    header("location: panier.php");
+
 }
 ?>
 <!DOCTYPE html>
@@ -55,7 +62,7 @@ if(isset($_GET['delete'])){
     </tr>
   </thead>
   <tbody>
-  <?php 
+  <?php
   $total =0 ;
   $req = "select * from panier";
   $result = mysqli_query($conn,$req);
