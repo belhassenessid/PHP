@@ -67,6 +67,7 @@ h2{
 }
 
 header{
+  z-index: 2;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -218,6 +219,7 @@ transform: scale(1.07);
   padding-right:25px;
 }
 .col-4{
+  z-index: 1;
   flex-basis: 27%;
   padding: 10px;
   min-width:200px;
@@ -237,6 +239,7 @@ transform: scale(1.07);
 }
 
 #footer{
+  z-index: 2;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   width: 100%;

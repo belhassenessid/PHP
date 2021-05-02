@@ -81,7 +81,7 @@ if (openDropdown.classList.contains('show')) {
   <a id="na" class="icon" href="panier.php"><i class="fas fa-shopping-cart"></i></a>
   <a id="na" class="icon" href="#"><i class="fas fa-heart"></i></a>
     </div>
-</header>
+</header>²
 
 </br></br></br>
 <!-- affichage des produits -->
