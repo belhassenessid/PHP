@@ -50,19 +50,7 @@ if(isset($_GET['delete'])){
     </div>
 </header>
 </br></br></br>
-<div class="table-responsive">
-  <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th width="15%">Product Name</th>
-      <th width="20%">Product Image</th>
-      <th width="10%">Quantity</th>
-      <th width="10%">Price</th>
-      <th width="10%">Total</th>
-      <th width="10%">Action</th>
-    </tr>
-  </thead>
-  <tbody>
+
   <?php
   $total =0 ;
   $req = "select * from panier";
@@ -70,6 +58,19 @@ if(isset($_GET['delete'])){
     if(mysqli_num_rows($result)>0){
     while($row=mysqli_fetch_assoc($result)){
   ?>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th >Product Name</th>
+        <th >Product Image</th>
+        <th >Quantity</th>
+        <th >Price</th>
+        <th >Total</th>
+        <th >Action</th>
+      </tr>
+    </thead>
+    <tbody>
   <tr>
       <th scope="row"><?php echo $row["name"]?></th>
       <td><img src="<?php echo $row["image"];?>" style="max-height:100%; max-width:100%"/> </td>
@@ -89,7 +90,10 @@ if(isset($_GET['delete'])){
     </tr>
     <?php
     }
-    else echo "0 results";
+    else echo '<h1 class="echo">Your cart is empty!</h1>
+    <h2 class="add">Wanna add some products?</h2>
+    <button class="return"><span><a href="shop.php">Go to Products</a></span></button>
+    ';
   ?>
   </tbody>
   </table>

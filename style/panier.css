@@ -25,17 +25,31 @@ li,button{
 
 #titre{
   position: fixed;
-  margin-top: -11px;
+  margin-top: -15px;
   padding: 0px 10px 2px 15px;
     margin-left: 70px;
     color: #edf0f1;
 }
 .logo i{
-  margin-top: -12px;
   margin-left: 55px;
   font-size: 20px;
     color: #edf0f1;
 }
+.logo{
+  margin-top: -7px;
+}
+.echo{
+
+  margin-top: 150px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.add{
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center
+}
+
 
 .title{
   font-family: "Montserrat", sans-serif;
@@ -61,7 +75,7 @@ header{
 
 .navbar-links{
 
-  margin-top: -11px;
+  margin-top: -13px;
  list-style: none;
 }
 .navbar-links li{
@@ -75,16 +89,17 @@ transition: all 0.3s ease 0s;
 .navbar-links li #na:hover{
 color:#0088A9;
 }
-button{
+.dropbtn{
+  align-items: center;
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
-  border-radius: 50px;
+  border-radius: 1px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   outline: none;
 }
-button:hover{
+.dropbtn:hover{
     background-color: rgba(0, 136, 169, 0.7);
     outline: none;
 }
@@ -141,9 +156,67 @@ font-weight: bold;
   border-radius: 14px;}
 
 .navbar-icons a{
+        display: inline-block;
+    padding: 0px 12px 5px 15px;
+    margin-right: 15px;
+  }
+.navbar-icons{
+      display: inline-block;
+    margin-top: -8px;
+
+  }
+.table-responsive{
+  margin-top: 50px;
+margin-left: 50px;
+  width: 1250px;
+}
+.return a{
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.return{
+  margin-top: 5px;
+  margin-left: 650px;
+  border-radius: 4px;
+  background-color: #24252A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 174px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.return span {
+  cursor: pointer;
   display: inline-block;
-  padding: 0px 12px 5px 15px;
-  margin-right: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.return span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.return:hover span {
+  padding-right: 25px;
+}
+
+.return:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+th{
+  width: 2%;
+  height: 15px;
 }
 #footer{
     font-family: "Montserrat", sans-serif;

@@ -23,12 +23,16 @@ hr{
 
 #bottom{
   border-top: 1px solid;
-  margin-top: -50px;
+  margin-top: -65px;
   margin-bottom: 50px;
 }
 h2{
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
+  font-weight: 15px;
+  text-align: center;
+  margin:0 auto 80px;
+  color: #555;
 
 }
 .mid{
@@ -44,16 +48,18 @@ h2{
 
 #titre{
   position: fixed;
-  margin-top: -11px;
+  margin-top: -15px;
   padding: 0px 10px 2px 15px;
     margin-left: 70px;
     color: #edf0f1;
 }
 .logo i{
-  margin-top: -12px;
   margin-left: 55px;
   font-size: 20px;
     color: #edf0f1;
+}
+.logo{
+  margin-top: -7px;
 }
 
 .title{
@@ -63,7 +69,6 @@ h2{
   color: #edf0f1;
   margin-right: auto;
   cursor: pointer;
-
 }
 
 header{
@@ -80,7 +85,7 @@ header{
 
 
 .navbar-links{
-margin-top: -10px;
+margin-top: -13px;
  list-style: none;
 }
 .navbar-links li{
@@ -94,19 +99,7 @@ transition: all 0.3s ease 0s;
 .navbar-links li #na:hover{
 color:#0088A9;
 }
-/*button{
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  outline: none;
-}
-button:hover{
-    background-color: redrgba(0, 136, 169, 0.7);
-    outline: none;
-}*/
+
 .dropbtn {
   padding: 4px 0px;
   background-color: rgba(0, 136, 169, 1);
@@ -155,16 +148,23 @@ button:hover{
   background-color: #ddd;
   border-radius: 14px;
   }
+  .navbar-icons a{
+        display: inline-block;
+    padding: 0px 12px 5px 15px;
+    margin-right: 15px;
+  }
+  .navbar-icons{
+      display: inline-block;
+    margin-top: -8px;
 
+  }
 .show {display:block;
   border-radius: 14px;}
-.navbar-icons{
-  display: inline-block;
-  margin-top: -3px;
-}
-.navbar-icons a{
-  padding: 0 15px 15px;
-}
+
+
+
+
+
 
 .prod-name{
   font-size: 25px;
@@ -192,6 +192,7 @@ border: none;
   outline: 0;
 }
 .btn-add{
+  margin-left: 25px;
   font-size: 18px;
   background-color: #eee;
   color: black;
@@ -215,13 +216,13 @@ transform: scale(1.07);
 .small-container{
   max-width: 1080px;
   margin: auto;
-  padding-left:25px;
+  padding-left:33px;
   padding-right:25px;
 }
 .col-4{
   z-index: 1;
   flex-basis: 27%;
-  padding: 10px;
+  padding: 5px;
   min-width:200px;
   margin-bottom: 50px;
   transition: ease 0.5s;
@@ -231,12 +232,7 @@ transform: scale(1.07);
 .col-4 img{
   width: 100%;
 }
-.title1{
-  font-weight: 15px;
-  text-align: center;
-  margin:0 auto 80px;
-  color: #555;
-}
+
 
 #footer{
   z-index: 2;

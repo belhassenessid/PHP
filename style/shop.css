@@ -36,10 +36,12 @@ li,button{
     color: #edf0f1;
 }
 .logo i{
-  margin-top: -12px;
   margin-left: 55px;
   font-size: 20px;
     color: #edf0f1;
+}
+.logo{
+  margin-top: 7px;
 }
 
 .title{
@@ -145,21 +147,26 @@ font-weight: bold;
 .show {display:block;
   border-radius: 14px;}
 
-.navbar-icons a{
-  display: inline-block;
-  padding: 0px 12px 5px 15px;
-  margin-right: 15px;
-}
+  .navbar-icons a{
+          display: inline-block;
+      padding: 0px 12px 5px 15px;
+      margin-right: 15px;
+    }
+  .navbar-icons{
+        display: inline-block;
+      margin-top: -8px;
+
+    }
 .products-container{
     width: 95vw;
     height: auto;
     padding:12rem 4rem;
     display:grid ;
-    grid-template-columns: repeat(3,1fr); 
+    grid-template-columns: repeat(3,1fr);
     justify-items:center;
     grid-gap : 5rem;
- 
- 
+
+
 }
 .product{
    width: 100%;
@@ -172,13 +179,13 @@ font-weight: bold;
    max-height:300px;
    z-index: 2;
 }
- 
- 
+
+
 .product figure{
     width:100%;
     overflow:hidden;
 }
- 
+
 .product figure img{
    width:100%;
    height: 100%;
@@ -193,7 +200,7 @@ font-weight: bold;
     opacity:1;
     transition: opacity 0.4s cubic-bezier(0.28, 0, 0.18, 1) 0.3s;
     text-align: center;
- 
+
 }
 .product .label{
     text-transform: uppercase;
@@ -217,7 +224,7 @@ font-weight: bold;
     width: 100%;
     height: 100%;
 }
- 
+
 .product button{
     width: 9rem;
     height: 2.8rem;
@@ -227,25 +234,25 @@ font-weight: bold;
     position: absolute;
     top:100%;
     left: 50% ;
-    transform: translateX(-50%) translateY(0);  
+    transform: translateX(-50%) translateY(0);
     transition: transform 0.3s cubic-bezier(0.28, 0, 0.18, 1);
- 
+
     border: none;
     font-family: sans-serif;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     letter-spacing:2px;
     z-index:50;
 }
- 
+
 /* product hover effects*/
 .product:hover img{
     transform: scale(1.07);
- 
+
 }
 .product:hover button{
-    transform: translateX(-50%) translateY(-100%); 
+    transform: translateX(-50%) translateY(-100%);
     transition: transform 0.3s cubic-bezier(0.28, 0, 0.18, 1) 0.5s ,
-                background-color 0.3s ease, color .3s ease ;  
+                background-color 0.3s ease, color .3s ease ;
 }
 .product:hover figcaption{
    opacity:0;
@@ -253,5 +260,5 @@ font-weight: bold;
 }
 .product button:hover{
     background-color: white ;
-    color: black; 
+    color: black;
 }

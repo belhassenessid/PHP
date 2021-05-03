@@ -104,7 +104,7 @@ if (openDropdown.classList.contains('show')) {
             <form method="POST" action="Homme.php">
                     <div>
                       <div class="div1">
-                        <img src="<?php echo $row["image"];?>" class="img-responsive" style="width:200px;height:200px;"/><br/>
+                        <img src="<?php echo $row["image"];?>" class="img-prod" /><br/>
                         <h4 class="prod-name"><?php echo $row["name"];?></h4>
                         <h4 class="prod-price"><?php echo "$".$row["price"];?></h4>
                         </div>
