@@ -48,7 +48,7 @@ if (openDropdown.classList.contains('show')) {
         <i class="fas fa-bars"></i>
       </label>
             <ul class="navbar-links">
-    <li class="nav-item"><a id="na" href="index.html">Home</a></li>
+    <li class="nav-item"><a id="na" href="index.php">Home</a></li>
     <li class="nav-item"><a id="na" href="shop.php">Shop</a></li>
     <li class="nav-item"><a id="na"  href="#">About</a></li>
     <li class="nav-item"><button onclick="myFunction()" class="dropbtn" type="button" name="button">My Account</button></li>
@@ -74,6 +74,7 @@ if (openDropdown.classList.contains('show')) {
     <h1>Collection<br>New Arrivals</h1>
     <p id="collection" class="collection">New Collection are in check out!</p>
     <a  href="shop.php" class="btn">Explore Now</a>
+    <video style="padding-left:-1em;display:flex;width:30em;margin-left:100% ;margin-top:-20em;" autoplay poster="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.jpg?t=1619709539097" src="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.mp4?t=1619709539097" muted="muted" loop="loop" preload="none" controlslist="nodownload" playsinline="" class="product-video"></video>
   </div>
   <div class="new-img">
     <img src="image\img-2-testt.png" alt="" class="img-col">
