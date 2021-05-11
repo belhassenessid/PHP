@@ -6,6 +6,8 @@
     <link href="../style/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
    <!-- <link rel="stylesheet" href="../style/style.css">-->
     <link rel="stylesheet" href="../style/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -38,6 +40,7 @@ if (openDropdown.classList.contains('show')) {
     <title></title>
   </head>
   <body>
+
     <header>
     <a href="index.php" class="logo"><i id="logo" class="fas fa-shopping-basket"></i></a>
     <a href="index.php" class="title-a"><p id="titre"><span class="title">Skouza</span> Store</p></a>
@@ -73,7 +76,8 @@ if (openDropdown.classList.contains('show')) {
   <div class="news">
     <h1>Collection<br>New Arrivals</h1>
     <p id="collection" class="collection">New Collection are in check out!</p>
-    <a  href="shop.php" class="btn">Explore Now</a>
+    <a style="margin-top:50px;" href="shop.php" class="neon-button">Explore Now</a>
+    <!-- <?php include_once 'test.html'?> -->
     <video style="padding-left:-1em;display:flex;width:30em;margin-left:100% ;margin-top:-20em;" autoplay poster="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.jpg?t=1619709539097" src="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.mp4?t=1619709539097" muted="muted" loop="loop" preload="none" controlslist="nodownload" playsinline="" class="product-video"></video>
   </div>
   <div class="new-img">

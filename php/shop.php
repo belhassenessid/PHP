@@ -50,9 +50,9 @@ if (openDropdown.classList.contains('show')) {
 </head>
 <body>
 
-<header>
+<header >
     <a href="#" class="logo"><i id="logo" class="fas fa-shopping-basket"></a></i>
-    <p id="titre"><span class="title">Skouza</span> Store</p>
+    <p id="titre"><span class="title">Test</span> Store</p>
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
