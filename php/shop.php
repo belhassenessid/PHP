@@ -90,7 +90,8 @@ if (openDropdown.classList.contains('show')) {
                     </figcaption>
                 </figure>
                 <button data-product="climate" name="add_to_cart">view product</button>
-                <a href="Homme.php"></a>
+                 <a href="<?php if($row['gender']=='f') echo "Femme.php"; elseif($row['gender']=='h') echo "Homme.php";elseif($row['gender']=='e') echo "enfant.php";?>"></a> 
+                 
             </article>
             <?php } }?>
 </div>
