@@ -1,6 +1,7 @@
 <?php
 session_start();
 require("config_db.php");
+
 if(isset($_POST["add_to_cart"]))
 {
     if(!isset($_SESSION['username'])){
@@ -24,7 +25,8 @@ if(isset($_POST["add_to_cart"]))
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($conn);
         }
-    } else {echo '<script>alert("item already added ")</script>';
+    } else {
+        header("location:enfant.php");
     }
      mysqli_close($conn);
    // header("location: Homme.php");
@@ -83,40 +85,44 @@ if (openDropdown.classList.contains('show')) {
     </div>
 </header>
 
-</br></br></br>
-<!-- affichage des produits -->
+ </br></br></br>
+<!--affichage des produits -->
 <div class="small-container">
-    <h2 class="title1">Kid Products</h2>
+  <hr id="top">
+    <h2 class="title1">Kids Products</h2>
+    <hr id="bottom">
 <div class="row">
-  <?php 
+  <?php
   $req = "select * from product where gender='e' order by id asc";
   $res= mysqli_query($conn,$req);
   if(mysqli_num_rows($res)>0){
-      while($row=mysqli_fetch_assoc($res)){ 
+      while($row=mysqli_fetch_assoc($res)){
   ?>
-  
-  
+
+
         <div class="col-4">
-            <form method="POST" action="Homme.php">
+            <form method="POST" action="enfant.php">
                     <div>
-                        <img src="<?php echo $row["image"];?>" class="img-responsive" style="width:200px;height:200px;"/><br/>
-                        <h4 class="text-info"><?php echo $row["name"];?></h4>
-                        <h4 class="text-danger"><?php echo "$".$row["price"];?></h4>
-                        <input type="text" name="item_quantity" class="form-contorl" value="1"/>
-                        <input type="hidden" name="item_id" value="<?php echo $row["id"];?>"/>
-                        <input type="hidden" name="item_name" value="<?php echo $row["name"];?>"/>
+                      <div class="div1">
+                        <img src="<?php echo $row["image"];?>" class="img-prod" /><br/>
+                        <h4 class="prod-name"><?php echo $row["name"];?></h4>
+                        <h4 class="prod-price"><?php echo "$".$row["price"];?></h4>
+                        </div>
+                        <input type="number" max="30" min="1" step="1" name="item_quantity" class="prod-qn" value="1"/>
+                        <input type="hidden" name="item_id" value="<?php echo $row["id"];?>"/></h4>
+                        <input type="hidden" name="item_name" value="<?php echo $row["name"];?>"/></h4>
                         <input type="hidden" name="item_price" value="<?php echo $row["price"];?>"/>
                         <input type="hidden" name="item_image" value="<?php echo $row["image"];?>"/>
-                        </br><button type="submit" class="btn btn-success" name="add_to_cart">Add To Cart<i class="fas fa-shopping-cart"></i></button>
+                      </br><button type="submit" id="add" class="btn-add" name="add_to_cart">Add To Cart<i class="fas fa-shopping-cart"></i></button>
                     </div>
             </form>
             </div>
-        
-   <?php 
+
+   <?php
      }
       }
     ?>
-     </div>   
+     </div>
 </div>
     </div>
 </div>

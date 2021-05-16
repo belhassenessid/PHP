@@ -50,15 +50,7 @@ if(isset($_GET['delete'])){
     </div>
 </header>
 </br></br></br>
-
-  <?php
-  $total =0 ;
-  $req = "select * from panier";
-  $result = mysqli_query($conn,$req);
-    if(mysqli_num_rows($result)>0){
-    while($row=mysqli_fetch_assoc($result)){
-  ?>
-  <div class="table-responsive">
+<div class="table-responsive">
     <table class="table table-bordered">
     <thead>
       <tr>
@@ -71,6 +63,14 @@ if(isset($_GET['delete'])){
       </tr>
     </thead>
     <tbody>
+  <?php
+  $total =0 ;
+  $req = "select * from panier";
+  $result = mysqli_query($conn,$req);
+    if(mysqli_num_rows($result)>0){
+    while($row=mysqli_fetch_assoc($result)){
+  ?>
+  
   <tr>
       <th scope="row"><?php echo $row["name"]?></th>
       <td><img src="<?php echo $row["image"];?>" style="max-height:100%; max-width:100%"/> </td>
