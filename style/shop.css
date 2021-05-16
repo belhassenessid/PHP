@@ -41,7 +41,7 @@ li,button{
     color: #edf0f1;
 }
 .logo{
-  margin-top: 7px;
+  margin-top: -5px;
 }
 
 .title{
@@ -67,9 +67,8 @@ header{
 
 
 .navbar-links{
-
-  margin-top: -11px;
- list-style: none;
+  z-index:2;
+  display: fixed;
 }
 .navbar-links li{
 display: inline-block;
@@ -177,7 +176,6 @@ font-weight: bold;
    overflow: hidden;
    margin-bottom: 3rem;
    max-height:300px;
-   z-index: 2;
 }
 
 

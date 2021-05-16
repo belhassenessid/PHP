@@ -52,13 +52,13 @@ if (openDropdown.classList.contains('show')) {
 
 <header >
     <a href="#" class="logo"><i id="logo" class="fas fa-shopping-basket"></a></i>
-    <p id="titre"><span class="title">Test</span> Store</p>
+    <p id="titre"><span class="title">Skouza</span> Store</p>
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-            <ul class="navbar-links">
+    <ul class="navbar-links">
     <li class="nav-item"><a id="na" href="index.php">Home</a></li>
     <li class="nav-item"><a id="na" href="shop.php">Shop</a></li>
     <li class="nav-item"><a id="na"  href="#">About</a></li>
