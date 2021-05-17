@@ -7,6 +7,12 @@ if(isset($_POST["add_to_cart"]))
     if(!isset($_SESSION['username'])){
     header('location:login.php');
 }
+
+function function_alert($message) {
+
+  // Display the alert box 
+  echo "<script>alert('$message');</script>";
+}
     $id=$_POST['item_id'];
     //verification de produit ajouté
     $check = "select * from panier where id = $id";
@@ -16,22 +22,26 @@ if(isset($_POST["add_to_cart"]))
         $quant=$_POST['item_quantity'];
         $price=$_POST['item_price'];
         $image=$_POST['item_image'];
+
         $sql = "INSERT INTO panier (id,name,image,price,quantite)
         VALUES ('$id','$name','$image','$price','$quant')";
         if (mysqli_query($conn, $sql)) {
-            echo "New record has been added successfully !";
-            header("location: homme.php");
+          header("Location: Homme.php?Message= Item added sucessfully" . urlencode($Message));
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($conn);
         }
     } else {
-        header("location:Homme.php");
+      header("location:Homme.php?Message1= Item already added" . urlencode($Message1));
     }
      mysqli_close($conn);
    // header("location: Homme.php");
 }
-
-
+if (isset($_GET['Message'])) {
+  print '<script type="text/javascript">alert("' . $_GET['Message'] . '");</script>';
+}
+if (isset($_GET['Message1'])) {
+  print '<script type="text/javascript">alert("' . $_GET['Message1'] . '");</script>';
+}
 ?>
 <!DOCTYPE html>
 <html>

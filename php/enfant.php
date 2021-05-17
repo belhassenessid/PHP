@@ -20,18 +20,22 @@ if(isset($_POST["add_to_cart"]))
         $sql = "INSERT INTO panier (id,name,image,price,quantite)
         VALUES ('$id','$name','$image','$price','$quant')";
         if (mysqli_query($conn, $sql)) {
-            echo "New record has been added successfully !";
-            header("location: panier.php");
+          header("Location: enfant.php?Message= Item added sucessfully" . urlencode($Message));
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($conn);
         }
     } else {
-        header("location:enfant.php");
+        header("location:enfant.php?Message1= Item already added" . urlencode($Message1));
     }
      mysqli_close($conn);
    // header("location: Homme.php");
 }
-
+if (isset($_GET['Message'])) {
+  print '<script type="text/javascript">alert("' . $_GET['Message'] . '");</script>';
+}
+if (isset($_GET['Message1'])) {
+  print '<script type="text/javascript">alert("' . $_GET['Message1'] . '");</script>';
+}
 
 ?>
 <!DOCTYPE html>
