@@ -233,6 +233,59 @@ transform: scale(1.07);
   width: 100%;
 }
 
+.popup .popuptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 1050%;
+  left: 190%;
+  margin-left: -80px;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 
 #footer{
   z-index: 2;
@@ -241,9 +294,73 @@ transform: scale(1.07);
   width: 100%;
   text-align: center;
   height: 30px;
-  position: fixed;
   bottom: 0;
   background: #24252A;
   color: white;
   margin-bottom: 0%;
+}
+.echo{
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.add{
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center
+}
+.return a{
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.return{
+  position: fixed;
+  margin-top: 2px;
+  margin-left: 650px;
+  border-radius: 4px;
+  background-color: #24252A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 174px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+.return span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.return span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.return:hover span {
+  padding-right: 25px;
+}
+
+.return:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#error {
+  padding: 0;
+margin-top: 180px;
+font-size: 110px;
+margin-left: 710px;
+
+
+
+
 }

@@ -16,12 +16,11 @@ if(isset($_POST["add_to_cart"]))
         $quant=$_POST['item_quantity'];
         $price=$_POST['item_price'];
         $image=$_POST['item_image'];
-
         $sql = "INSERT INTO panier (id,name,image,price,quantite)
         VALUES ('$id','$name','$image','$price','$quant')";
         if (mysqli_query($conn, $sql)) {
             echo "New record has been added successfully !";
-            header("location: panier.php");
+            header("location: homme.php");
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($conn);
         }
@@ -61,6 +60,13 @@ if (openDropdown.classList.contains('show')) {
 }
 }
 </script>
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction2() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 </head>
 <body>
 <header>
@@ -71,7 +77,7 @@ if (openDropdown.classList.contains('show')) {
     <li class="nav-item"><a id="na" href="index.php">Home</a></li>
     <li class="nav-item"><a id="na" href="shop.php">Shop</a></li>
     <li class="nav-item"><a id="na"  href="#">About</a></li>
-    <li class="nav-item"><button onclick="myFunction()" class="dropbtn" type="button" name="button">My Account</button></li>
+    <li class="nav-item"><button onclick="myFunction2()" class="dropbtn" type="button" name="button">My Account</button></li>
     <div id="myDropdown" class="dropdown-content">
       <a href="login.php">Log in</a>
       <a href="login.php">Sign Up</a>
@@ -98,9 +104,7 @@ if (openDropdown.classList.contains('show')) {
   if(mysqli_num_rows($res)>0){
       while($row=mysqli_fetch_assoc($res)){
   ?>
-
-
-        <div class="col-4">
+  <div class="col-4">
             <form method="POST" action="Homme.php">
                     <div>
                       <div class="div1">
@@ -113,7 +117,10 @@ if (openDropdown.classList.contains('show')) {
                         <input type="hidden" name="item_name" value="<?php echo $row["name"];?>"/></h4>
                         <input type="hidden" name="item_price" value="<?php echo $row["price"];?>"/>
                         <input type="hidden" name="item_image" value="<?php echo $row["image"];?>"/>
-                      </br><button type="submit" id="add" class="btn-add" name="add_to_cart">Add To Cart<i class="fas fa-shopping-cart"></i></button>
+                        <div class="popup">
+                        </br><button type="submit" id="add" class="btn-add" onclick="myFunction2()" name="add_to_cart">Add To Cart<i class="fas fa-shopping-cart"></i></button>
+                           <span class="popuptext" id="myPopup">Item add to cart</span>
+                        </div>
                     </div>
             </form>
             </div>

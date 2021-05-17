@@ -68,7 +68,7 @@ if (openDropdown.classList.contains('show')) {
      <input type="button" value="Search"/>
      </div>
   <a id="na" class="icon" href="panier.php"><i class="fas fa-shopping-cart"></i></a>
-  <a id="na" class="icon" href="#"><i class="fas fa-heart"></i></a>
+  <a id="na" class="icon" href="like.php"><i class="fas fa-heart"></i></a>
     </div>
 </header>
 <div class="mid">
@@ -78,7 +78,7 @@ if (openDropdown.classList.contains('show')) {
     <p id="collection" class="collection">New Collection are in check out!</p>
     <a style="margin-top:50px;" href="shop.php" class="neon-button">Explore Now</a>
     <!-- <?php include_once 'test.html'?> -->
-    <video style="padding-left:-1em;display:flex;width:30em;margin-left:100% ;margin-top:-20em;" autoplay poster="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.jpg?t=1619709539097" src="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.mp4?t=1619709539097" muted="muted" loop="loop" preload="none" controlslist="nodownload" playsinline="" class="product-video"></video>
+    <video style="padding-left:-1em;display:flex;width:30em;margin-left:100% ;margin-top:-230px;" autoplay poster="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.jpg?t=1619709539097" src="https://static.bershka.net/4/photos2/2021/V/0/1/p/2044/455/250//02/2044455250_4_3_1.mp4?t=1619709539097" muted="muted" loop="loop" preload="none" controlslist="nodownload" playsinline="" class="product-video"></video>
   </div>
   <div class="new-img">
     <img src="image\img-2-testt.png" alt="" class="img-col">
